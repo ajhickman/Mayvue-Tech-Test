@@ -1,6 +1,8 @@
 # Mayvue Tech Test
 
-The SQL code to recreate the database is in the file CreateMovieDC.sql. Here's the examples I used for testing:
+The SQL code to recreate the database is in the file CreateMovieDC.sql, but there is also a migration which is a better way to make the database. 
+
+Here's the examples I used for testing:
 
 The Lord of the Rings: The Fellowship of the Ring 	
 A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring and save Middle-earth from the Dark Lord Sauron. 	

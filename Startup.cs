@@ -29,6 +29,13 @@ namespace Mayvue_Tech_Test
 
             services.AddDbContext<MoviesContext>(options =>
             options.UseSqlServer(Configuration.GetConnectionString("MoviesContext")));
+            services.AddCors(options => {
+                options.AddDefaultPolicy(policy =>
+                {
+                    policy.WithOrigins("*");
+                    policy.WithMethods("*");
+                });
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -48,6 +55,8 @@ namespace Mayvue_Tech_Test
             app.UseStaticFiles();
 
             app.UseRouting();
+
+            app.UseCors();
 
             app.UseAuthorization();
 
